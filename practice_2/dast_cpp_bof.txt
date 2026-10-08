@@ -1,0 +1,2 @@
+Copied: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+*** stack smashing detected ***: terminated

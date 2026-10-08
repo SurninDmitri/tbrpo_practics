@@ -1,0 +1,7 @@
+cwe_id,cwe_name,rank_2025,owasp_category,typical_impact
+CWE-79,Cross-site Scripting,1,A03:2021-Injection,Захват сессий, подмена содержимого страницы, выполнение JS в браузере
+CWE-89,SQL Injection,2,A03:2021-Injection,Нсанкционированный доступ к БД, обход авторизации, модификация данных
+CWE-78,OS Command Injection,9,A03:2021-Injection,Выполнение команд ОС на сервере, полная компрометация системы
+CWE-120,Buffer Overflow,11,A06:2021-Vulnerable Components,Перезапись стека, отказ в обслуживании (DoS), потенциальное выполнение кода
+CWE-134,Format String,-,A03:2021-Injection,Чтение и запись произвольных областей памяти, раскрытие данных
+CWE-476,NULL Pointer Dereference,14,A05:2021-Security Misconfiguration,Аварийное завершение процесса (Crash), отказ в обслуживании

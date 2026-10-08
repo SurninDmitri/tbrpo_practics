@@ -1,0 +1,9 @@
+vuln_id,language,file,line,severity,cwe_id,cwe_name,owasp,cve_example,cvss,description
+1,Python,app.py,133,Critical,CWE-89,SQL Injection,A03:2021-Injection,CVE-2019-25676,9.8,Формирование SQL-запроса через f-строки (подтверждено DAST: обход аутентификации с кодом 302 и сессией)
+2,Python,templates/product.html,23,High,CWE-79,Stored XSS,A03:2021-Injection,CVE-2005-3308,8.2,Отключение экранирования HTML с помощью фильтра |safe
+3,C++,vulnerable.cpp,10,Critical,CWE-120,Buffer Overflow,A06:2021-Vulnerable Components,CVE-2026-89633,9.5,strcpy без проверки длины (подтверждено DAST: аварийный сбой процесса stack smashing detected)
+4,C++,vulnerable.cpp,16,High,CWE-134,Format String,A03:2021-Injection,CVE-2023-38545,7.8,Передача пользовательского ввода в printf без спецификатора формата
+5,C++,vulnerable.cpp,22,Critical,CWE-78,Command Injection,A03:2021-Injection,CVE-2026-30880,9.8,Вызов system() с пользовательским вводом (подтверждено DAST: удаленное выполнение команды id)
+6,JavaScript,vulnerable.js,10,Critical,CWE-89,SQL Injection,A03:2021-Injection,CVE-2020-37243,9.8,Конкатенация req.query.username в SQL-запросе SQLite
+7,JavaScript,vulnerable.js,18,High,CWE-79,Reflected XSS,A03:2021-Injection,CVE-2005-3309,8.2,Прямой вывод req.query.name в res.send (подтверждено DAST: внедрение тегов script)
+8,JavaScript,vulnerable.js,26,Critical,CWE-78,Command Injection,A03:2021-Injection,CVE-2026-30880,9.8,Использование child_process.exec() (подтверждено DAST: выполнение команды id на сервере)

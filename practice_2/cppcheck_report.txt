@@ -1,0 +1,20 @@
+vulnerable.cpp:1:0: information: Include file: <iostream> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <iostream>
+^
+vulnerable.cpp:2:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+vulnerable.cpp:3:0: information: Include file: <cstdio> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstdio>
+^
+vulnerable.cpp:8:28: style: Parameter 'input' can be declared as pointer to const [constParameterPointer]
+void vulnerable_copy(char* input) {
+                           ^
+vulnerable.cpp:15:30: style: Parameter 'input' can be declared as pointer to const [constParameterPointer]
+void vulnerable_printf(char* input) {
+                             ^
+vulnerable.cpp:20:30: style: Parameter 'input' can be declared as pointer to const [constParameterPointer]
+void vulnerable_system(char* input) {
+                             ^
+nofile:0:0: information: Active checkers: 172/592 (use --checkers-report=<filename> to see details) [checkersReport]
+
