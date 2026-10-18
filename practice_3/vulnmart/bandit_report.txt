@@ -1,0 +1,41 @@
+Run started:2026-10-07 15:04:16.671535+00:00
+
+Test results:
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: 'vulnmart-lab-secret-not-for-production'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html
+   Location: ./app.py:19:17
+18	app = Flask(__name__)
+19	app.secret_key = "vulnmart-lab-secret-not-for-production"  # intentionally weak, static secret
+20	DB = "vulnmart.db"
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b608_hardcoded_sql_expressions.html
+   Location: ./app.py:133:18
+132	        # INTENTIONALLY VULNERABLE: string-concatenated SQL query
+133	        query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
+134	        try:
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 153
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 1
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 1
+		Medium: 1
+		High: 0
+Files skipped (0):

@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 430
+ETag: W/"1ae-zG2JqZm8VQa+8eYG5lam6f1JPD0"
+Date: Thu, 08 Oct 2026 08:14:40 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.037 ms
+
+--- 127.0.0.1 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.037/0.037/0.037/0.000 ms
+uid=1000(dmitri) gid=1000(dmitri) groups=1000(dmitri),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),107(netdev),1001(docker)

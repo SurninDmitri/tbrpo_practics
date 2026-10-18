@@ -1,0 +1,15 @@
+HTTP/1.1 302 FOUND
+Server: Werkzeug/3.1.9 Python/3.12.3
+Date: Thu, 08 Oct 2026 08:13:27 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 189
+Location: /
+Vary: Cookie
+Set-Cookie: session=eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIn0.asdQpw.pY8RCvDGExd2GJ38slaPrJ97E1A; HttpOnly; Path=/
+Connection: close
+
+<!doctype html>
+<html lang=en>
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to the target URL: <a href="/">/</a>. If not, click the link.
